@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.slider{
+    width : 60%;
+    margin :auto;
+    border: 5px solid black;
+    
+}
+
+.slide{
+    display: flex;
+    
+}
+
+.slide img{
+    width: 100%;   
+}
+
+.naviagation--buttons{
+    
+}

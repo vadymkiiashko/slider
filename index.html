@@ -1,67 +1,35 @@
-*{
-    padding: 0;
-    margin:0;
-    box-sizing: border-box;
-}
-
-.slider{
-    width : 60%;
-    margin :auto;
-    border: 5px solid black;
-    position: relative;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Slider</title>
     
-    
-    
-}
-
-.slide{
-    display: flex;
-    overflow: hidden;
-    
-      
-    
-}
-
-.slide img{
-    width: 100%;   
-    transform: translateX(100%);
-    transition: all 0.5s ease-in-out;
-    z-index: -10;
-    
-   
-}
-.nav_arrow{
-    opacity: 50%;
+</head>
+<body>
+ <div class="slider">
+    <div class ="naviagation--buttons">
+        <button class = "nav_button left" data-direction ="previous">
+           <img class ="nav_arrow"src="./img/arrows/arrow-left.svg" alt="">
+        </button>
+        <button class = "nav_button right" data-direction ="next">
+            <img class ="nav_arrow" src="./img/arrows/arrow-right.svg" alt="">
+        </button>
+       </div>
+    <div class="slide">
+       <img src="./img/bike-woman.jpg" alt="bike-model" data-name="bike-mdel">
+      <img src="./img/beach-model.jpg" alt="beach-model" data-name="beach-model" >
+         <img src="./img/stargazing.jpg" alt="stargazing" data-name="stargazing" >
+         <img src="./img/pexels-volker-meyer-3800412.jpg" alt="skiing" data-name="skiing" >
+           <!--- -->
           
-}
-.nav_button{
-    font-size: 5vw;
-    cursor: pointer;
-    float: none;
-    z-index: 10;
-    height: 10%;
-    width: 10%;
-    position: absolute;
-    top:45%;
-    border: none;
-    background: none;
-    
-}
-.nav_button:hover{
-    
-}
-.nav_arrow:hover{
-    opacity: 1 ;
-}
-
-.left{
-   left:5%;
- 
-   
-    
-}
- .right{
-    right: 5%;  
-}
+     </div>
+      </div>
 
 
+
+ <script src="script.js"></script>
+
+</body>
+</html>

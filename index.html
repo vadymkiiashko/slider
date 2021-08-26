@@ -5,24 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css">
     <title>Slider</title>
+    
 </head>
 <body>
  <div class="slider">
-     <div class="slide">
-         
-         <img src="./img/bike-woman.jpg" alt="bike-model" data-name="bike-mdel">
-         <img src="./img/beach-model.jpg" alt="beach-model" data-name="beach-model" >
+    <div class ="naviagation--buttons">
+        <button class = "nav_button left" data-direction ="previous">
+           <img class ="nav_arrow"src="./img/arrows/arrow-left.svg" alt="">
+        </button>
+        <button class = "nav_button right" data-direction ="next">
+            <img class ="nav_arrow" src="./img/arrows/arrow-right.svg" alt="">
+        </button>
+       </div>
+    <div class="slide">
+       <img src="./img/bike-woman.jpg" alt="bike-model" data-name="bike-mdel">
+      <img src="./img/beach-model.jpg" alt="beach-model" data-name="beach-model" >
          <img src="./img/stargazing.jpg" alt="stargazing" data-name="stargazing" >
-         
+         <img src="./img/pexels-volker-meyer-3800412.jpg" alt="skiing" data-name="skiing" >
+           <!--- -->
           
      </div>
- </div>
+      </div>
 
 
-<div class ="naviagation--buttons">
- <button class = "nav_button" data-direction ="previous">Prev</button>
- <button class = "nav_button" data-direction ="next">Next</button>
-</div>
+
  <script src="script.js"></script>
 
 </body>

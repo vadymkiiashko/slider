@@ -8,18 +8,62 @@
     width : 60%;
     margin :auto;
     border: 5px solid black;
+    position: relative;
+    
+    
     
 }
 
 .slide{
     display: flex;
+    overflow: hidden;
+    
+      
     
 }
 
 .slide img{
     width: 100%;   
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out;
+    z-index: -10;
+    
+   
 }
-
-.naviagation--buttons{
+.nav_arrow{
+    opacity: 50%;
+          
+}
+.nav_button{
+    font-size: 5vw;
+    cursor: pointer;
+    float: none;
+    z-index: 10;
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    top:45%;
+    border: none;
+    background: none;
     
 }
+.nav_button:hover{
+    
+}
+.nav_arrow:hover{
+    opacity: 1 ;
+}
+
+.left{
+   left:5%;
+ 
+   
+    
+}
+ .right{
+    right: 5%;  
+}
+
+
+
+
